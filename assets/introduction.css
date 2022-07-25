@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(../img/background/code.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+/* @media screen and (max-width: 800px) {
+	.container {
+	  grid-auto-rows: minmax(auto, auto);
+	  grid-template-areas:
+		"uxDesigner uxDesigner"
+		"frontEnd frontEnd";
+	  min-height: 100vh;
+	}
+	.uxDesigner {
+	  grid-area: uxDesigner;
+	}
+	.frontEnd {
+	  grid-area: frontEnd;
+	}
+  } */
+.txt a {
+  text-decoration: none;
+}
+.txt h1 {
+  font-size: 4em;
+  text-align: center;
+  font-family: "Cormorant SC", serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.txt h1:hover {
+  color: #daa520;
+}
+@media screen and (max-width: 1200px) {
+  .txt h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .txt h1 {
+    font-size: 2em;
+  }
+  .container {
+    font-size: 0.8em;
+    padding: 10px;
+  }
+}
+
+.link nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15vh;
+}
+
+.link a {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  background-color: #daa520;
+  border: 1px solid #daa520;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.link a:hover {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #daa520;
+}
+
+.logo img {
+  position: absolute;
+  z-index: 100;
+  top: 35%;
+  left: 42.2%;
+  width: 15%;
+  cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .logo img {
+    width: 15%;
+    top: 40%;
+    left: 43%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .logo img {
+    width: 20%;
+    top: 40%;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logo img {
+    width: 20%;
+    top: 43%;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .logo img {
+    width: 20%;
+    top: 45%;
+    left: 40%;
+  }
+}
