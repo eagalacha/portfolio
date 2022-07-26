@@ -46,47 +46,212 @@
 }
 
 /* ABOUT */
-
-.aboutContent {
+.introduction {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  padding: 10vh;
-  gap: 15vh;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  gap: 100px;
 }
 
-.card {
-  margin-left: 5vh;
-}
-
-.card img {
+.introduction img {
   width: 100%;
   border-radius: 4px;
-  box-shadow: 0px 0px 6px black;
 }
 
-.card .cardTitle {
-  padding: 10px;
-  text-align: center;
-  background-color: #000000;
+.introTitle h1 {
+  font-size: 4em;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introTitle h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../img/details/detalhe.svg) no-repeat center;
+  position: absolute;
+  top: -20px;
+  left: -50px;
+  z-index: -1;
+}
+
+.introTitle p {
   font-size: 1.3em;
-  color: #daa520;
+  color: #52525252;
+}
+
+/* EXPERIENCE */
+.experience {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+.experience .subtitle {
+  color: #e0e0e0;
+}
+
+.experienceDescription {
+  font-size: 1.3em;
+  line-height: 1.2;
+  max-width: 45ch;
+  margin-bottom: 60px;
+  color: #141414;
+}
+
+.experienceDescription strong {
+  color: #000000;
+}
+
+.company {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  margin-bottom: 20px;
+  gap: 10px 20px;
+  background-color: #f5f5f5;
   border-radius: 4px;
-  box-shadow: 0px 0px 6px black;
+  position: relative;
 }
 
-/* HISTORY */
-.history {
-  border-left: 1px solid #daa520;
+.company::before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6a475, #a69260);
+  position: absolute;
+  top: 20px;
+  left: -4px;
 }
 
-.historyTitle {
-  font-family: "Cormorant SC", serif;
-  font-size: 2em;
-  margin-bottom: 1.3vh;
-  margin-left: 1vh;
+.companyYear {
+  position: absolute;
+  text-align: right;
+  width: 80px;
+  top: 22px;
+  left: -90px;
+  color: #525252;
+  font-size: 0.85em;
 }
 
-.description p {
-  margin-bottom: 3vh;
-  margin-left: 2vh;
+.companyTitle {
+  font-size: 1.2em;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.companyText {
+  font-size: 0.875em;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.companySkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: flex-start;
+}
+
+.companySkills li {
+  font-size: 0.875em;
+  line-height: 1.4;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+/* EXPERTISE */
+.expertise {
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.expertiseContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+.expertise .subtitle {
+  color: #292929;
+}
+
+.expertiseText {
+  font-size: 1.3em;
+  line-height: 1.2;
+  max-width: 45ch;
+  margin-bottom: 15px;
+  color: #a3a3a3;
+}
+
+.expertiseText strong {
+  color: #ffffff;
+}
+
+.expertiseExtra h3 {
+  font-size: 0.875em;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.expertiseExtra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -4px;
+  left: -36px;
+}
+
+.courses h3::before {
+  background: url(../img/details/cursos.svg) no-repeat center center;
+}
+
+.languages h3::before {
+  background: url(../img/details/idiomas.svg) no-repeat center center;
+}
+
+.expertiseExtra li {
+  font-size: 1.2em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.expertiseExtra span {
+  color: #8f8f8f;
+}
+
+.courses li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  gap: 60px;
+}
+
+.download a:hover {
+  color: #daa520;
+  transition: 0.4s;
 }
