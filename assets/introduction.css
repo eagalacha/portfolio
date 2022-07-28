@@ -3,56 +3,16 @@
   width: 100%;
   position: relative;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   background-image: url(../img/background/code.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
 }
-/* @media screen and (max-width: 800px) {
-	.container {
-	  grid-auto-rows: minmax(auto, auto);
-	  grid-template-areas:
-		"uxDesigner uxDesigner"
-		"frontEnd frontEnd";
-	  min-height: 100vh;
-	}
-	.uxDesigner {
-	  grid-area: uxDesigner;
-	}
-	.frontEnd {
-	  grid-area: frontEnd;
-	}
-  } */
-.txt a {
-  text-decoration: none;
-}
-.txt h1 {
-  font-size: 4em;
-  text-align: center;
-  font-family: "Cormorant SC", serif;
-  color: #ffffff;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.4s;
-}
-.txt h1:hover {
-  color: #daa520;
-}
-@media screen and (max-width: 1200px) {
-  .txt h1 {
-    font-size: 3em;
-  }
-}
-@media screen and (max-width: 380px) {
-  .txt h1 {
-    font-size: 2em;
-  }
-  .container {
-    font-size: 0.8em;
-    padding: 10px;
-  }
+
+.link {
+  margin-top: 15vh;
 }
 
 .link nav {
@@ -60,7 +20,6 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  margin-bottom: 15vh;
 }
 
 .link a {
@@ -117,4 +76,50 @@
     top: 45%;
     left: 40%;
   }
+}
+
+.txt {
+  position: absolute;
+  z-index: 100;
+  top: 75%;
+  left: calc(1920 / 2);
+  cursor: pointer;
+}
+
+.txt a {
+  text-decoration: none;
+}
+.txt h1 {
+  font-size: 4em;
+  text-align: center;
+  font-family: "Cormorant SC", serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .txt h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .txt h1 {
+    font-size: 2em;
+  }
+  .container {
+    font-size: 0.8em;
+    padding: 10px;
+  }
+}
+
+.txt p {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: #ffffff;
+  text-align: center;
+  transition: 0.4s;
+}
+.txt p:hover {
+  color: #daa520;
 }

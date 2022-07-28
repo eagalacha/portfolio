@@ -4,17 +4,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fffafa;
+}
+
 .subtitle {
   font-size: 8em;
   line-height: 1;
   word-break: break-all;
   text-transform: uppercase;
   max-width: 6ch;
-}
-
-.download {
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-  gap: 60px;
 }

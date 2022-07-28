@@ -1,5 +1,7 @@
 .header {
   background-color: #000000;
+  position: fixed;
+  z-index: 100;
 }
 
 .cont-flex {
@@ -51,21 +53,22 @@
   grid-template-columns: 1fr 2fr;
   align-items: center;
   max-width: 1200px;
-  padding: 40px 20px;
+  padding: 230px 20px 80px 20px;
   margin: 0 auto;
   gap: 100px;
 }
 
 .introduction img {
-  width: 100%;
+  width: 80%;
   border-radius: 4px;
 }
 
 .introTitle h1 {
   font-size: 4em;
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   position: relative;
+  color: #292929;
 }
 
 .introTitle h1::before {
@@ -83,6 +86,17 @@
 .introTitle p {
   font-size: 1.3em;
   color: #52525252;
+  margin-bottom: 20px;
+}
+
+.introTitle .myDescription {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  line-height: 1.4;
+  color: #141414;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* EXPERIENCE */
